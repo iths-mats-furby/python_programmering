@@ -48,6 +48,15 @@ Det är ett repository för kursen. För att få ner det lokalt på din dator be
 
 I mappen du står i finns det en fil som heter requirements.txt. Den filen innehåller en lista på pythonpaket som du ska installera i din conda environment. 
 
+Mappen kommer uppdateras och för att få de senaste ändringarna använder ni git pull
+
+	git pull
+
+Om ni väljer att jobba i detta repositroy, vilket kan vara skönt med all kursmaterial lättillgänglig, kan ni inte pusha egna ändringar till repot. Ni kan dock committa till er lokala Git repo och ha det sparat lokalt. 
+
+	git add FILE_NAME
+	git commit -m "comment about changes"
+
 Om du vill kunna ladda ner de senaste ändringarna i kursens GitHub repo, men bara får en massa erorrs, följ dessa steg:
 
 #### 1. git status
@@ -82,6 +91,19 @@ för varje path-to-file som synts i rött. Om du provar att göra `git status` i
 När du inte har några filer kvar under __changes not staged for commit__ så kan du gå vidare till att dra ner det senaste i repot genom
 
 	git pull
+
+
+## Forking
+
+Om ni vill pusha upp era commits någonstans så att de är sparade på GitHub molnet så kan ni forka repot och klona eran fork istället.
+
+ - [Generellt om fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks)
+ - [Hur man gör en fork](https://docs.github.com/en/enterprise-server@3.0/get-started/quickstart/fork-a-repo)
+ - [Hur man håller koll på origanl repo och fork samtidigt med remote](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/configuring-a-remote-for-a-fork)
+ - [Hur man hämtar ner det senaste lärare gjort på föreläsningsrepo (fetch)](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork)
+ - [Föra in det senaste läraren har gjort till ditt egna arbete (merge)](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/merging-an-upstream-repository-into-your-fork )
+ - [Hur ändra till fork om man redan har kopierat (copy) ett repo](https://admcpr.com/what-the-fork/)
+
 
 
 ## Kurslitteratur

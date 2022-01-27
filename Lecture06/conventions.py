@@ -1,4 +1,3 @@
-
 def string_comparison_method(first_string: str, second_string: str) -> str:
     """ This is a string that explains what the method does. It is called 
     docstring. In this method we compare two strings to see if the content is 
@@ -25,7 +24,7 @@ def main():
     b = 1000
     print(a/b)
 
-    string_to_print = string_comparison_method("hello world", "Hello World")
+    string_to_print = string_comparison_method("hello world", "Hello Eva")
     print(string_to_print)
 
 if __name__ == "__main__":

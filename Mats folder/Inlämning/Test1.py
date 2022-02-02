@@ -6,14 +6,14 @@ class databashantering():
         self.db_name = db_name
         self.csv = csv
         self.table_name = table_name
-        self.df = pd.read_csv("vaccin_covid.csv") #self.csv
-        self.db = sqlite3.connect("vaccin_covid.db") #self.db_name
-        self.cur =self.db.cursor()
+        self.df = pd.read_csv(self.csv) #self.csv
+        self.db = sqlite3.connect(self.db_name)  #"vaccin_covid.db"
+        self.cur = self.db.cursor()
 
     def seperate(self, column_name, seperator):
         self.column_name = column_name
         self.seperator = seperator
-        splittad = self.df[self.coulmn_name] .str.split(self.seperator, expand=True)
+        splittad = self.df[self.column_name] .str.split(self.seperator, expand=True)
         self.df = self.df.join(splittad)
         del self.df[self.column_name]
 

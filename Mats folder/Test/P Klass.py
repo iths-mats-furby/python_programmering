@@ -27,6 +27,3 @@ class databashantering():
         self.tab_name = tab_name
         self.cur.execute("""CREATE TABLE {self.tab.name}, AS SELECT DISTINCT {self.groupselect_table1}, 
         AVG({self.groupselect_table1}), GROUP BY {groupselect_table1}""")
-
-
-
